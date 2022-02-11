@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://nyaa.si/download/1483547.torrent
+wget https://nyaa.si/download/1483358.torrent
 aria2c -x 64 --bt-remove-unselected-file=true --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 
 
