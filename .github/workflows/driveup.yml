@@ -15,6 +15,7 @@ env:
     DOWNLOAD: true
     UPLOAD_COW: false
     CLEAR_GIT: flase
+    GITHUB_PUSH: flase
 
 jobs:
   UPLOAD:
@@ -82,10 +83,10 @@ jobs:
           git config --local user.name "DTHbot"
           git add .
           git commit -m "DHT.dat" -a
-      - name: GitHub Push
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+#      - name: GitHub Push
+#        uses: ad-m/github-push-action@v0.6.0
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload Files to cowtransfer
         if: env.UPLOAD_COW == 'true'
         run: |
