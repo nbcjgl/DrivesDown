@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://nyaa.si/download/1485113.torrent
+wget https://nyaa.si/download/1485100.torrent
 aria2c -x 64 --bt-remove-unselected-file=true --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 
-rclone copy -v --checksum --transfers 12 --checkers 16 --onedrive-chunk-size 200M --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ "onedrive:/我的文件 - animation_0 的文件/temp/[喵萌奶茶屋&LoliHouse] 彩绿（不含月铃姐妹"
+rclone copy -v --checksum --transfers 12 --checkers 16 --onedrive-chunk-size 200M --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ "onedrive:/我的文件 - animation_0 的文件/temp/[豌豆字幕组&风之圣殿字幕组&LoliHouse] 鬼灭之刃 游郭篇 09(42)"
