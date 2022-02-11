@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://nyaa.si/download/1480078.torrent
+wget https://nyaa.si/download/1480071.torrent
 aria2c -x 64 --bt-remove-unselected-file=true --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 
-rclone copy -v --checksum --transfers 12 --checkers 16 --onedrive-chunk-size 200M --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ "onedrive:/我的文件 - animation_0 的文件/temp/[喵萌奶茶屋&LoliHouse] 怪人开发部的黑井津小姐"
+rclone copy -v --checksum --transfers 12 --checkers 16 --onedrive-chunk-size 200M --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ "onedrive:/我的文件 - animation_0 的文件/temp/[LoliHouse] 彩云国物语 第一季"
