@@ -14,6 +14,7 @@ env:
     DOWNLOAD_ARIA2: true
     DOWNLOAD: true
     UPLOAD_COW: false
+    CLEAR_GIT: flase
 
 jobs:
   UPLOAD:
@@ -100,6 +101,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2.3.4
       - name: Run the Task
+        if: env.CLEAR_GIT == 'true'
         run: |
           git config --global user.name "Clear Bot"
           git config --global user.email "clearbot@email.com"
