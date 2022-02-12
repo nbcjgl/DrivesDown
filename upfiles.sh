@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://nyaa.si/download/1472428.torrent
+wget https://nyaa.si/download/1472031.torrent
 aria2c -x 64 --bt-remove-unselected-file=true --seed-time=0 --bt-tracker-connect-timeout=10 --bt-tracker-timeout=10 *.torrent
 
-rclone copy -v --checksum --transfers 12 --checkers 16 --onedrive-chunk-size 200M --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ "onedrive:/我的文件 - animation_0 的文件/temp/[Lilith-Raws] 轉生成女性向遊戲只有毀滅 END 的壞人大小姐 X"
+rclone copy -v --checksum --transfers 12 --checkers 16 --onedrive-chunk-size 200M --exclude "*.{sh,torrent,aria2}" /home/runner/work/DrivesDown/DrivesDown/download/ "onedrive:/我的文件 - animation_0 的文件/temp/[Lilith-Raws] 狂熱深淵 迷失的孩子"
